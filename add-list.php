@@ -7,12 +7,15 @@
 <html>
     <head>
         <title>Task Manager with PHP and MySQL</title>
-        
-        <body>
+        <link rel="stylesheet" href="<?php echo SITEURL; ?>css/style.css">
+    </head>
+
+    <body>
+        <div class="wrapper">
             <h1>TASK MANAGER</h1>
 
-            <a href="<?php echo SITEURL; ?>">Home</a>
-            <a href="<?php echo SITEURL; ?>manage-list.php">Manage List</a>
+            <a class="btn-secondary" href="<?php echo SITEURL; ?>">Home</a>
+            <a class="btn-secondary" href="<?php echo SITEURL; ?>manage-list.php">Manage List</a>
 
 
             <h3>Add List Page</h3>
@@ -32,7 +35,7 @@
 
             <!-- Form to add list starts here -->
             <form method="POST" action="">
-                <table>
+                <table class="tbl-half">
                     <tr>
                         <td>List Name: </td>
                         <td><input type="text" name="list_name" placeholder="Type list name here" required="required"/></td>
@@ -44,14 +47,14 @@
                     </tr>
 
                     <tr>
-                        <td><input type="submit" name="submit" value="ADD"/></td>
+                        <td><input class="btn-primary btn-lg" type="submit" name="submit" value="ADD"/></td>
                     </tr>
                 </table>
             </form>
             <!-- Form to add list ends here -->
-
-        </body>
-    </head>
+        </div>
+    </body>
+    
 </html>
 
 
